@@ -16,9 +16,8 @@ def part1(file_txt):
     return first, second
 
 def part2(file_txt):
-    file = open(file_txt, 'r')
     first, second = part1(file_txt)
-    similarity = 0;
+    similarity = 0
     for e in first:
         similarity += e * second.count(e)
 
